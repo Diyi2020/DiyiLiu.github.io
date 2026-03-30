@@ -10,9 +10,8 @@ redirect_from:
 {% include base_path %}
 
 ## Contact Information
-Department of Mathematics | University of Minnesota Twin Cities  
-206 Church St SE, Minneapolis, MN 55455  
-Phone: (612) 803-2758 | Email: diyiliu@lbl.gov
+Postdoctoral Scholar | Lawrence Berkeley National Laboratory  
+Email: diyiliu@lbl.gov
 
 ---
 

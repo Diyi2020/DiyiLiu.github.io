@@ -30,6 +30,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      PAGES_PAT: ${{ secrets.PAGES_PAT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,14 +41,14 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
       - name: Setup Pages (with PAT)
-        if: ${{ secrets.PAGES_PAT != '' }}
+        if: ${{ env.PAGES_PAT != '' }}
         uses: actions/configure-pages@v4
         with:
           token: ${{ secrets.PAGES_PAT }}
           enablement: 'true'
 
       - name: Setup Pages (standard)
-        if: ${{ secrets.PAGES_PAT == '' }}
+        if: ${{ env.PAGES_PAT == '' }}
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
         run: bundle exec jekyll build

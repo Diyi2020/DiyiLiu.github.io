@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Postdoctoral Researcher at Lawrence Berkeley National Laboratory, hosted by Bert de Jong and also working with Chao Yang and Lin Lin. 
+Welcome! I'm a Postdoctoral Researcher at Berkeley Lab, hosted by Bert de Jong and also working with Chao Yang and Lin Lin. 
 
 
 
@@ -23,6 +23,5 @@ Before joining Berkeley Lab, I earned my Ph.D. in Applied Mathematics from the U
 
 
 My research is in **computational and applied mathematics**, with focus in **numerical analysis**, **mathematical physics**, and **quantum algorithm**.
-
 
 

@@ -3,7 +3,7 @@ title: "METTS Sampling and Free Energy Computation"
 collection: talks
 type: "Research Seminar"
 permalink: /talks/2021-08-15-lbnl-metts
-venue: "Lawrence Berkeley National Laboratory"
+venue: "Berkeley Lab"
 date: 2021-08-15
 location: "Berkeley, California (Virtual)"
 ---

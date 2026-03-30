@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Diyi Liu"
 title_separator          : "-"
 name                     : &name "Diyi Liu"
-description              : &description "Postdoctoral Researcher - Lawrence Berkeley National Laboratory"
+description              : &description "Postdoctoral Researcher - Berkeley Lab"
 url                      : https://diyi2020.github.io
 baseurl                  : "/DiyiLiu.github.io"
 repository               : "Diyi2020/DiyiLiu.github.io"
@@ -91,7 +91,7 @@ author:
   avatar           : "Diyi.jpg"
   bio              : "Applied Mathematics & Quantum Computing"
   location         : "Berkeley, CA"
-  employer         : "Lawrence Berkeley National Laboratory"
+  employer         : "Berkeley Lab"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=JqsWE4IAAAAJ&hl=en"
   email            : "diyiliu@lbl.gov" 

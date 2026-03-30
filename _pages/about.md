@@ -40,8 +40,11 @@ Selected papers:
 
 I received my **Ph.D. in Applied Mathematics** from the University of Minnesota and my **B.S. in Mathematics and Applied Mathematics** from Shanghai Jiao Tong University.
 
-You can find more details in the publications, talks, teaching, and CV sections.
+## Explore
 
+- [Publications]({{ site.baseurl }}/publications/)
+- [Talks and Presentations]({{ site.baseurl }}/talks/)
+- [Teaching]({{ site.baseurl }}/teaching/)
 
 
 

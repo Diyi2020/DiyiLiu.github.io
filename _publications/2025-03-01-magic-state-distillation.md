@@ -6,6 +6,7 @@ permalink: /publication/2025-03-01-magic-state-distillation
 excerpt: 'Research on quantum error correction using magic state distillation with asymptotically good codes on qudits for fault-tolerant quantum computing.'
 date: 2025-03-01
 venue: 'Quantum Error Correction'
+venue_label: 'Presented at'
 citation: 'Cervia, M.J., Lamm, H., Liu, D., Murairi, E.M., and Zhu, S. "Magic State Distillation using Asymptotically Good Codes on Qudits."'
 ---
 

@@ -1,6 +1,17 @@
 {% include base_path %}
 
 <!-- start custom head snippets -->
+<script>
+  (function() {
+    var storedTheme = null;
+    try {
+      storedTheme = localStorage.getItem("theme");
+    } catch (e) {}
+    if (storedTheme === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  })();
+</script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
@@ -23,6 +34,140 @@
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<style>
+  .theme-toggle {
+    position: absolute;
+    right: 3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #bdc1c4;
+    border-radius: 999px;
+    background: #fff;
+    color: #494e52;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  @media (min-width: 57.8125em) {
+    .theme-toggle {
+      right: 0;
+    }
+  }
+
+  html.dark-mode,
+  html.dark-mode body {
+    background-color: #111827;
+    color: #e5e7eb;
+  }
+
+  html.dark-mode .masthead,
+  html.dark-mode .greedy-nav,
+  html.dark-mode .author__urls,
+  html.dark-mode .page__footer,
+  html.dark-mode .toc,
+  html.dark-mode .notice,
+  html.dark-mode .notice--primary,
+  html.dark-mode .notice--info,
+  html.dark-mode .notice--warning,
+  html.dark-mode .notice--success,
+  html.dark-mode .notice--danger,
+  html.dark-mode div.highlighter-rouge,
+  html.dark-mode figure.highlight,
+  html.dark-mode .well {
+    background-color: #18212f;
+    color: #e5e7eb;
+    border-color: #334155;
+  }
+
+  html.dark-mode .page__footer {
+    color: #cbd5e1;
+  }
+
+  html.dark-mode .masthead,
+  html.dark-mode .page__content h2,
+  html.dark-mode .page__share,
+  html.dark-mode .page__comments-title,
+  html.dark-mode .page__content + .pagination,
+  html.dark-mode .page__meta + .pagination,
+  html.dark-mode .comment__date + .pagination,
+  html.dark-mode .page__related,
+  html.dark-mode .archive__subtitle,
+  html.dark-mode .comment:not(:last-child),
+  html.dark-mode .page__footer {
+    border-color: #334155;
+  }
+
+  html.dark-mode a,
+  html.dark-mode .greedy-nav a,
+  html.dark-mode .page__footer a,
+  html.dark-mode .author__urls a {
+    color: #7dd3fc;
+  }
+
+  html.dark-mode .greedy-nav .visible-links a:hover:before {
+    background: #7dd3fc;
+  }
+
+  html.dark-mode .theme-toggle,
+  html.dark-mode .btn--inverse {
+    background: #0f172a;
+    color: #e5e7eb !important;
+    border-color: #475569 !important;
+  }
+
+  html.dark-mode .btn,
+  html.dark-mode #goog-wm-sb {
+    background-color: #334155;
+  }
+
+  html.dark-mode code,
+  html.dark-mode pre,
+  html.dark-mode p > code,
+  html.dark-mode li > code,
+  html.dark-mode td > code {
+    background: #0f172a;
+    color: #e5e7eb;
+    border-color: #334155;
+  }
+
+  html.dark-mode .navicon,
+  html.dark-mode .navicon:before,
+  html.dark-mode .navicon:after {
+    background: #e5e7eb;
+  }
+
+  html.dark-mode .greedy-nav button {
+    background-color: #334155;
+    color: #e5e7eb;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var root = document.documentElement;
+    var toggle = document.getElementById("theme-toggle");
+    if (!toggle) return;
+
+    function syncLabel() {
+      toggle.textContent = root.classList.contains("dark-mode") ? "Light" : "Dark";
+      toggle.setAttribute("aria-pressed", root.classList.contains("dark-mode") ? "true" : "false");
+    }
+
+    toggle.addEventListener("click", function() {
+      root.classList.toggle("dark-mode");
+      try {
+        localStorage.setItem("theme", root.classList.contains("dark-mode") ? "dark" : "light");
+      } catch (e) {}
+      syncLabel();
+    });
+
+    syncLabel();
+  });
+</script>
 
 
 <!-- Support for MatJax -->

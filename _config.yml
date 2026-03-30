@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Diyi Liu"
 title_separator          : "-"
 name                     : &name "Diyi Liu"
-description              : &description "Applied Math PhD Student"
+description              : &description "Postdoctoral Researcher - Lawrence Berkeley National Laboratory"
 url                      : https://Diyi2020.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Diyi2020/Diyi2020.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Diyi Liu"
   avatar           : "Diyi.jpg"
-  bio              : "Applied Math"
-  location         : "Minneapolis"
-  employer         :
+  bio              : "Applied Mathematics & Quantum Computing"
+  location         : "Berkeley, CA"
+  employer         : "Lawrence Berkeley National Laboratory"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=JqsWE4IAAAAJ&hl=en"
-  email            : "liu00994@umn.edu" 
+  email            : "diyiliu@lbl.gov" 
   researchgate     :  
   uri              :
   bitbucket        :

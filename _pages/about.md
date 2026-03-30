@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Postdoctoral Researcher at Lawrence Berkeley National Laboratory, working with Bert de Jong, Chao Yang, and Lin Lin.
+Welcome! I'm a Postdoctoral Researcher at Lawrence Berkeley National Laboratory, hosted by Bert de Jong and also working with Chao Yang and Lin Lin.
 
 My research is in **computational and applied mathematics**, with interests in **numerical analysis**, **mathematical physics**, and **quantum information**.
 
@@ -39,13 +39,3 @@ Selected papers:
 ## Academic Background
 
 I received my **Ph.D. in Applied Mathematics** from the University of Minnesota and my **B.S. in Mathematics and Applied Mathematics** from Shanghai Jiao Tong University.
-
-## Explore
-
-- [Publications]({{ site.baseurl }}/publications/)
-- [Talks and Presentations]({{ site.baseurl }}/talks/)
-- [Teaching]({{ site.baseurl }}/teaching/)
-
-
-
-

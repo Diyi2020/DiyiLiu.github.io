@@ -11,8 +11,8 @@ title                    : "Diyi Liu"
 title_separator          : "-"
 name                     : &name "Diyi Liu"
 description              : &description "Postdoctoral Researcher - Lawrence Berkeley National Laboratory"
-url                      : https://diyi2020.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/DiyiLiu.github.io" # the subpath of your site, e.g. "/blog"
+url                      : "" # leave blank on GitHub Pages so site.github.url is used automatically
+baseurl                  : "" # leave blank when relying on site.github.url for project Pages
 repository               : "Diyi2020/DiyiLiu.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)

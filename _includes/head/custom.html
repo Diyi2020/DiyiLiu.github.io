@@ -65,8 +65,23 @@
     color: #2f261f;
   }
 
+  #main,
+  .page,
+  .page__inner-wrap,
+  .page__content,
+  .sidebar,
+  .author__content,
+  .author__urls-wrapper,
+  .archive,
+  .archive__item,
+  .archive__subtitle {
+    background-color: transparent;
+    color: inherit;
+  }
+
   .masthead,
   .greedy-nav,
+  .greedy-nav .hidden-links,
   .page__footer,
   .author__urls,
   .toc,
@@ -81,6 +96,17 @@
   .well {
     background-color: #fbf7ef;
     border-color: #d9cab8;
+  }
+
+  .btn--inverse,
+  .greedy-nav button,
+  .search-content,
+  input,
+  textarea,
+  select {
+    background-color: #fbf7ef;
+    border-color: #d9cab8;
+    color: #2f261f;
   }
 
   .page__footer {
@@ -113,8 +139,23 @@
     color: #f3e6d5;
   }
 
+  html.dark-mode #main,
+  html.dark-mode .page,
+  html.dark-mode .page__inner-wrap,
+  html.dark-mode .page__content,
+  html.dark-mode .sidebar,
+  html.dark-mode .author__content,
+  html.dark-mode .author__urls-wrapper,
+  html.dark-mode .archive,
+  html.dark-mode .archive__item,
+  html.dark-mode .archive__subtitle {
+    background-color: transparent;
+    color: inherit;
+  }
+
   html.dark-mode .masthead,
   html.dark-mode .greedy-nav,
+  html.dark-mode .greedy-nav .hidden-links,
   html.dark-mode .author__urls,
   html.dark-mode .page__footer,
   html.dark-mode .toc,
@@ -191,6 +232,15 @@
 
   html.dark-mode .greedy-nav button {
     background-color: #5b493d;
+    color: #f3e6d5;
+  }
+
+  html.dark-mode input,
+  html.dark-mode textarea,
+  html.dark-mode select,
+  html.dark-mode .search-content {
+    background-color: #2a201a;
+    border-color: #5b493d;
     color: #f3e6d5;
   }
 </style>

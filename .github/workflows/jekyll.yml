@@ -38,7 +38,15 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
-      - name: Setup Pages
+      - name: Setup Pages (with PAT)
+        if: ${{ secrets.PAGES_PAT != '' }}
+        uses: actions/configure-pages@v4
+        with:
+          token: ${{ secrets.PAGES_PAT }}
+          enablement: 'true'
+
+      - name: Setup Pages (standard)
+        if: ${{ secrets.PAGES_PAT == '' }}
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
         run: bundle exec jekyll build
